@@ -1,0 +1,36 @@
+{
+    "name": "lucia-surrealdb-adapter",
+    "author": "Ciska",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+"
+    },
+    "main": "dist/index.js",
+    "devDependencies": {
+        "@lucia-auth/adapter-test": "^5.0.1",
+        "@types/bun": "latest",
+        "bun-plugin-dts": "^0.2.3",
+        "lucia": "^3.2.0",
+        "typescript": "^5.5.3"
+    },
+    "peerDependencies": {
+        "surrealdb.js": "^1.0.0-beta.9",
+        "lucia": "3.x"
+    },
+    "bugs": "",
+    "files": [
+        "dist"
+    ],
+    "homepage": "",
+    "keywords": [
+        "lucia",
+        "surrealdb",
+        "adapter"
+    ],
+    "scripts": {
+        "build": "bun run build.mjs",
+        "prepublishOnly": "bun run build"
+    },
+    "types": "dist/index.d.ts"
+}
