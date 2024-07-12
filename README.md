@@ -1,19 +1,24 @@
 # lucia-surrealdb-adapter
 
-> [!WARNING]  
-> This is a work in progress and is not yet ready for use.
+Surreal DB adapter for Lucia.
 
-> [!CAUTION]  
-> USE AT YOUR OWN RISK
-
-To install dependencies:
+## Installation
 
 ```bash
-bun i
+npm i lucia-surrealdb-adapter
 ```
 
-To run tests:
+## Setup
 
-```bash
-bun test
+```ts
+import { SurrealDBAdapter } from "lucia-surrealdb-adapter";
+import Surreal from "surrealdb.js";
+
+//You will have to set this up with the connect and sign in methods
+const db = new Surreal();
+
+const adapter = new SurrealDBAdapter(db, {
+    user: "users",
+    session: "sessions",
+});
 ```

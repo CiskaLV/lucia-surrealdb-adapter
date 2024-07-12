@@ -1,10 +1,11 @@
 {
     "name": "lucia-surrealdb-adapter",
+    "version": "1.0.1",
     "author": "Ciska",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+"
+        "url": "git+https://github.com/CiskaLV/lucia-surrealdb-adapter.git"
     },
     "main": "dist/index.js",
     "devDependencies": {
@@ -18,11 +19,11 @@
         "surrealdb.js": "^1.0.0-beta.9",
         "lucia": "3.x"
     },
-    "bugs": "",
+    "bugs": "https://github.com/CiskaLV/lucia-surrealdb-adapter/issues",
     "files": [
         "dist"
     ],
-    "homepage": "",
+    "homepage": "https://github.com/CiskaLV/lucia-surrealdb-adapter#readme",
     "keywords": [
         "lucia",
         "surrealdb",
